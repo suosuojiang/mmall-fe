@@ -1,0 +1,23 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "happymmall",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^1.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suosuojiang/mmall-fe.git"
+  },
+  "author": "'suosuojiang'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suosuojiang/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/suosuojiang/mmall-fe#readme"
+}
