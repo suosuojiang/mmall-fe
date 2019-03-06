@@ -1,0 +1,22 @@
+
+
+
+
+{{#navList}}
+
+
+{{#isActive}}
+<li class="nav-item acitve">
+{{/isActive}}
+
+
+{{^isActive}}
+<li class="nav-item">
+{{/isActive}}
+
+        <a href="{{href}}" class="link">{{desc}}</a>
+</li>
+
+
+{{/navList}}
+    

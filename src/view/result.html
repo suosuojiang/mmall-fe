@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> - happymmall电商平台</title>
+</head>
+<body>
+    <%= require('html-loader!./layout/nav-simple.html') %>    
+    <!-- 把定宽类w如果放在里层，就可以在page-wrap做背景颜色/图片，但这里不需要就放在一起 -->
+    <div class="page-wrap w">
+        <div class="result-con register-success">
+            <h1 class="result-title">恭喜您，注册成功！</h1>
+            <div class="result-content">
+                <a href="./index.html" class="link">回到首页</a>
+            </div>
+        </div> 
+        <div class="result-con default-success">
+            <h1 class="result-title">恭喜您，操作成功！</h1>
+            <div class="result-content">
+                <a href="./index.html" class="link">回到首页</a>
+            </div>
+        </div>     
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>    
+</body>
+</html>

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 大笨蛋哈哈哈
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title>happymmall电商平台</title>
 </head>
 <body>
-
-    <%= require('html-loader!./layout/html-head.html') %>
-
-    hello webpack
-    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
-
+    <%= require('html-loader!./layout/nav.html') %>    
+    <%= require('html-loader!./layout/header.html') %>    
+    <!-- 把定宽类w如果放在里层，就可以在page-wrap做背景颜色/图片，但这里不需要就放在一起 -->
+    <div class="page-wrap w">
+        <%= require('html-loader!./layout/nav-side.html') %>
+        <div class="content width-nav"></div>     
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>    
 </body>
 </html>
