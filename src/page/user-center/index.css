@@ -1,0 +1,11 @@
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form-line .label{
+    /*.label是span标签，行内元素，没有宽度，所以要display*/
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}

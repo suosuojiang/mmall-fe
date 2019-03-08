@@ -14,11 +14,11 @@
 .nav-side .nav-item .link{
     color: #888;
 }
-.nav-side .nav-item .active .link{
+.nav-side .nav-item.active .link{
     color: #c60023;
 }
 /*右侧内容区*/
-.content.with-nav{
+.content.width-nav{
     float: left;
     width: 950px;
 }

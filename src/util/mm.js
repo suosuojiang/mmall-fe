@@ -8,7 +8,7 @@ var conf = {
 var _mm = {
     //网络请求
     request : function(param){
-        var _this = this;
+        var _this = this;       
         $.ajax({
             type     : param.method  || 'get',
             url      : param.url     || '',
@@ -21,7 +21,7 @@ var _mm = {
                 }
                 //没有登陆状态，需要强制登陆
                 else if (10 === res.status) {
-                    _this.login()
+                    _this.doLogin();
                 }
                 //请求数据错误
                 else if (1 === res.status) {
@@ -65,9 +65,11 @@ var _mm = {
     },
 
     //字段的验证，支持非空、手机、邮箱的判断
-    validata : function(value, type){
+    validate : function(value, type){
         var value = $.trim(value);
-        //非空验证
+        //非空验证 如果请求方式是require，并且真的传进来了值value，
+        // 加一个！value就先对value做数据类型转换变成布尔值true,然后取反成为false
+        // 再加第二个！就成为true。
         if ('require' === type) {
             return !!value;
         }

@@ -9,7 +9,7 @@ var navSide = {
         navList : [
             {name : 'user-center', desc: '个人中心', href: './user-center.html'},
             {name : 'order-list', desc: '我的订单', href: './order-list.html'},
-            {name : 'pass-update', desc: '修改密码', href: './pass-update.html'},
+            {name : 'user-pass-update', desc: '修改密码', href: './pass-update.html'},
             {name : 'about', desc: '关于MMall', href: './about.html'}
         ]
     },
@@ -23,14 +23,8 @@ var navSide = {
         // 计算active数据
         // var isActive = this.hasClass('active');
         for (var i = 0, iLength = this.option.navList.length; i < iLength; i++) {
-              console.log(this.option.navList[i].name+"!!!!!!")
-                console.log(this.option.name+"!!!!!")
-
             if (this.option.navList[i].name === this.option.name) {
                 this.option.navList[i].isActive = true;
-                console.log(iLength+"---iLength");
-                console.log(this.option.navList[i].name+"----")
-                console.log(this.option.name+"----")
             }
         };
         // 渲染list数据
@@ -39,8 +33,7 @@ var navSide = {
         });
         // 把html放入容器
         $('.nav-side').html(navHtml);
-    }
-    
+    }   
 };
 
 module.exports = navSide;
