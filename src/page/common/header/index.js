@@ -4,6 +4,7 @@ var _mm     = require('util/mm.js');
 // 通用页面头部
 var header = {
     init : function(){
+        this.onload();
         this.bindEvent(); 
     },
     onload : function(){
